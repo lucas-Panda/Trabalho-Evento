@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    background-color: rgb(43, 108, 192);
+    background-image: url(https://i.pinimg.com/originals/62/39/4d/62394d753859943e6a1a36443ef78795.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#foto{
+    border-radius: 40px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 20px;
+    align-items: center;
+}
+nav{
+    background-image: linear-gradient(#1f1d1d, #000000);
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+h1, 
+#menu{
+    color: #fff;
+
+}
+
+nav, 
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    padding: 0 20px;
+}
+h1{
+    margin: 0;
+    padding: 10px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+li:hover, 
+h1:hover, 
+button:hover,
+#checkbox:hover,
+#Enviar:hover,
+#contato:hover{
+    cursor: pointer;
+    opacity: 0.89;
+    animation: blink 1s infinite;
+    
+}
+li:hover, 
+h1:hover, 
+button:hover,
+#checkbox:hover,
+#Enviar:hover,
+#contato:hover{
+    cursor: pointer;
+    opacity: 0.89;
+    animation: blink 1s infinite;
+    
+}
+@keyframes blink {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    50% {
+        color: rgb(0, 255, 0);
+    }
+    100% {
+        color: rgb(0, 0, 255);
+    }
+}
+.piscante {
+    animation: blink 1s infinite;
+}
+
+button:focus ~ ul{
+    height: 180px;
+}
+
+
+@media (max-width: 700px){
+    nav, ul{
+        flex-direction: column;
+    }
+    ul{
+       text-align: center;
+       margin: 0;
+       height: 0;
+    }
+    nav{
+        padding: 0;
+        align-items: flex-start;
+    }
+    h1{
+        margin: 10px;
+    }
+    button{
+        display: flex;
+    }
+    li, ul {
+        width: 100%;
+    }
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#paragrafo1{
+    background-color: #153b28;
+    color: #ccc;
+    width: 800px;
+    border: 2px solid white;
+}
+#linha{
+    text-align: center;
+    background-color: #155e58;
+    color: #ccc;
+    width: 800px;
+    border: 5px solid white;
+}
+
+#Caixa{
+    border-radius: 10px;
+    border: 2px solid white;
+    color: #5900ff;
+    width: 40%;
+    height: 15px;
+}
+#checkbox{
+    border: 0px;
+    width: 100%;
+    height: 30px;
+}
+#Enviar{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    border-radius: 10px;
+    width: 15%;
+    height: 40px;
+}
+#linha2{
+    text-align: center;
+    background-color: #261742;
+    color: #ccc;
+    width: 300px;
+    border: 2px solid black;
+}
+html{
+    scroll-behavior: smooth;
+}
+#contato{
+    color: white;
+    
+}
